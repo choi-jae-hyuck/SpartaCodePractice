@@ -136,7 +136,10 @@ public class Shop
                 items[playerAction - 1].Have = !items[playerAction - 1].Have;
                 warrior.Gold += (int)(items[playerAction - 1].Gold * 0.85f);
                 if (items[playerAction - 1].Equip)
-                    warrior.AddEquip(-items[playerAction - 1].ATTACK, -items[playerAction - 1].DEFENCE);
+                {
+                    items[playerAction - 1].Equip = false;
+                    warrior.AddEquip(-items[playerAction - 1].Attack, -items[playerAction - 1].Defence);
+                }
             }
             else
             {

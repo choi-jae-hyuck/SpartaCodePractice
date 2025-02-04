@@ -1,7 +1,10 @@
 ﻿namespace TrainingConsole;
 
+
 public class Sleep
 {
+    private int RESTHEALTH = 100;
+    
     public void RestInfo(Warrior warrior)
     {
         int restGold = 500;
@@ -23,7 +26,7 @@ public class Sleep
                     {
                         warrior.Gold -= restGold;
                         Console.WriteLine("휴식을 완료했습니다");
-                        warrior.Health = 100;
+                        warrior.Health = RESTHEALTH;
                     }
                     else
                     {
