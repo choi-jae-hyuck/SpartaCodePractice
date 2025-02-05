@@ -1,6 +1,7 @@
 ﻿namespace TrainingConsole;
 
 using Newtonsoft.Json;
+using System.IO;
 
 class Program
 {
@@ -8,6 +9,10 @@ class Program
     
     static void Main(string[] args)
     {
+        DataManager dataManager = new DataManager();
+        Data data = new Data();
+        string file = "../../../../TrainingConsole/Save.json";
+        
         
         Console.WriteLine("스파르타 던전에 오신걸 환영합니다");
         Console.WriteLine("원하시는 이름을 입력하세요");
@@ -59,6 +64,8 @@ class Program
 
         Warrior warrior = new Warrior(playerName, job);
         List<Item> items = new List<Item>();
+        data._player = warrior;
+        data._Item = items;
         List<Dungeon> dungeons = new List<Dungeon>();
         Item.ItemInitialize(items);
         Dungeon.DungeonInitialize(dungeons);
@@ -79,6 +86,7 @@ class Program
             Console.WriteLine("3. 상점");
             Console.WriteLine("4. 던전탐색");
             Console.WriteLine("5. 휴식하기");
+            Console.WriteLine("9. 저장하기");
             Console.WriteLine("");
             Console.WriteLine("0. 게임종료");
             Console.Write("원하시는 행동을 선택하십시오 : ");
@@ -103,6 +111,14 @@ class Program
                     break;
                 case 5 :
                     sleep.RestInfo(warrior);
+                    break;
+                case 8 :        //불러오기 기능 테스트 오류로 사용불가
+                    dataManager.Load(file, data);
+                    warrior = data._player;
+                    items = data._Item;
+                    break;
+                case 9 :
+                    dataManager.Save(file, data);
                     break;
                 default:
                     Console.WriteLine("잘못된 입력입니다");

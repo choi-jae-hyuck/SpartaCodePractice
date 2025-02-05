@@ -1,0 +1,86 @@
+{
+  "_player": {
+    "Level": 1,
+    "Name": "dddddddd",
+    "Job": "전사",
+    "Attack": 10.0,
+    "Defence": 5.0,
+    "Health": 100,
+    "Gold": 15000,
+    "Exp": 0,
+    "EquipAttack": 0,
+    "EquipDefence": 0
+  },
+  "_Item": [
+    {
+      "Name": "수련자 갑옷",
+      "Equip": false,
+      "Have": false,
+      "Explanation": "수련에 도움을 주는 갑옷입니다.",
+      "Gold": 1000,
+      "Attack": 0,
+      "Defence": 5,
+      "Type": 1
+    },
+    {
+      "Name": "무쇠 갑옷",
+      "Equip": false,
+      "Have": false,
+      "Explanation": "무쇠로 만들어져 튼튼한 갑옷입니다.",
+      "Gold": 2000,
+      "Attack": 0,
+      "Defence": 9,
+      "Type": 1
+    },
+    {
+      "Name": "스파르타의 갑옷",
+      "Equip": false,
+      "Have": false,
+      "Explanation": "스파르타의 전사들이 사용했다는 전설의 갑옷입니다.",
+      "Gold": 3500,
+      "Attack": 0,
+      "Defence": 15,
+      "Type": 1
+    },
+    {
+      "Name": "낡은 검",
+      "Equip": false,
+      "Have": false,
+      "Explanation": "쉽게 볼 수 있는 낡은 검 입니다.",
+      "Gold": 600,
+      "Attack": 2,
+      "Defence": 0,
+      "Type": 0
+    },
+    {
+      "Name": "청동 도끼",
+      "Equip": false,
+      "Have": false,
+      "Explanation": "어디선가 사용됐던거 같은 도끼입니다.",
+      "Gold": 1500,
+      "Attack": 5,
+      "Defence": 0,
+      "Type": 0
+    },
+    {
+      "Name": "스파르타의 창",
+      "Equip": false,
+      "Have": false,
+      "Explanation": "스파르타의 전사들이 사용했다는 전설의 창입니다.",
+      "Gold": 2000,
+      "Attack": 7,
+      "Defence": 0,
+      "Type": 0
+    },
+    {
+      "Name": "용사의 검",
+      "Equip": false,
+      "Have": false,
+      "Explanation": "아방 스트랏슈~",
+      "Gold": 5000,
+      "Attack": 10,
+      "Defence": 10,
+      "Type": 0
+    }
+  ]
+}
