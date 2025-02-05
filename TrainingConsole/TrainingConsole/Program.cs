@@ -112,8 +112,8 @@ class Program
                 case 5 :
                     sleep.RestInfo(warrior);
                     break;
-                case 8 :        //불러오기 기능 테스트 오류로 사용불가
-                    dataManager.Load(file, data);
+                case 8 :        // 불러오기 성공 ( 추가 수정할때 코드 이동해서 첫화면에 띄우는걸로)
+                    data = dataManager.Load(file);
                     warrior = data._player;
                     items = data._Item;
                     break;

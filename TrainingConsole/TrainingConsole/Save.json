@@ -1,11 +1,11 @@
 {
   "_player": {
     "Level": 1,
-    "Name": "dddddddd",
-    "Job": "전사",
-    "Attack": 10.0,
-    "Defence": 5.0,
-    "Health": 100,
+    "Name": "ddddd",
+    "Job": "마법사",
+    "Attack": 15.0,
+    "Defence": 3.0,
+    "Health": 50,
     "Gold": 15000,
     "Exp": 0,
     "EquipAttack": 0,

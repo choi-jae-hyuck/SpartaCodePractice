@@ -33,7 +33,7 @@ public class Shop
                 case 0:
                     return;
                 case 1:
-                    BuyItem(ref warrior.Gold, items);
+                    BuyItem(warrior.Gold, items);
                     break;
                 case 2:
                     SellItem(warrior, items);
@@ -47,7 +47,7 @@ public class Shop
 
     }
 
-    public void BuyItem(ref int Gold, List<Item> items)
+    public void BuyItem(int Gold, List<Item> items)
     {
 
         while (true)

@@ -1,25 +1,37 @@
-﻿namespace TrainingConsole;
+﻿using System.Text.Json.Serialization;
+
+namespace TrainingConsole;
 
 public class Warrior
 {
-    public int Level;
-    public string Name;
-    public string Job;
-    public float Attack;
-    public float Defence;
-    public int Health;
-    public int Gold;
-    public int Exp;
+    [JsonPropertyName("Level")]
+    public int Level { get; set; }
+    [JsonPropertyName("Name")]
+    public string Name{ get; set; }
+    [JsonPropertyName("Job")]
+    public string Job{ get; set; }
+    [JsonPropertyName("Attack")]
+    public float Attack{ get; set; }
+    [JsonPropertyName("Defence")]
+    public float Defence{ get; set; }
+    [JsonPropertyName("Health")]
+    public int Health{ get; set; }
+    [JsonPropertyName("Gold")]
+    public int Gold{ get; set; }
+    [JsonPropertyName("Exp")]
+    public int Exp{ get; set; }
 
-    public int EquipAttack;
-    public int EquipDefence;
+    [JsonPropertyName("EquipAttack")]
+    public int EquipAttack{ get; set; }
+    [JsonPropertyName("EquipDefence")]
+    public int EquipDefence{ get; set; }
     
-    public Warrior(string name, int job)
+    public Warrior(string name, int jobtype)
     {
         Level = 1;
         Name = name;
 
-        switch (job)
+        switch (jobtype)
         {
             case 1 :
                 Job = "전사";
