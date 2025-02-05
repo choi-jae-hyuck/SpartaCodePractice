@@ -60,6 +60,7 @@ public class Dungeon
         
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("던전 클리어");
             Console.WriteLine("축하합니다!!");
             Console.WriteLine("{0}을 클리어 하였습니다.", Name);
@@ -74,7 +75,10 @@ public class Dungeon
             int playerAction = int.Parse(Console.ReadLine());
             if (playerAction == 0) return;
             else
+            {
                 Console.WriteLine("잘못된 입력입니다");
+                Thread.Sleep(1000);
+            }
         }
     }
 
@@ -84,6 +88,7 @@ public class Dungeon
         
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("던전 클리어 실패");
             Console.WriteLine("체력 {0} -> {1}", warrior.Health * 2, warrior.Health);
             Console.WriteLine("0. 나가기");            
@@ -91,8 +96,11 @@ public class Dungeon
             int playerAction = int.Parse(Console.ReadLine());
             if (playerAction == 0) return;
             else
+            {
                 Console.WriteLine("잘못된 입력입니다");
-            
+                Thread.Sleep(1000);
+            }
+
         }
     }
     

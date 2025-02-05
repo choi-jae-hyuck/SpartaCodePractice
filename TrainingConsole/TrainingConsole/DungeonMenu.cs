@@ -14,6 +14,7 @@ public class DungeonMenu
     {
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("던전입장");
             Console.WriteLine("이곳에서 던전으로 들어가기전 활동을 할 수 있습니다.");
             Console.WriteLine("");
@@ -40,7 +41,10 @@ public class DungeonMenu
                 Dungeons[playerAction - 1].DungeonIn(warrior);
             }
             else
+            {
                 Console.WriteLine("잘못된 입력입니다");
+                Thread.Sleep(1000);
+            }
         }
     }
 

@@ -57,6 +57,9 @@ public class Warrior
             Level += 1;
             Attack += 0.5f;
             Defence += 1;
+            Console.WriteLine("");
+            Console.WriteLine("LEVEL UP");
+            Thread.Sleep(1000);
         }
     }
     
@@ -64,6 +67,7 @@ public class Warrior
     {
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("1. 상태 보기");
             Console.WriteLine("캐릭터의 정보가 표시됩니다.");
             Console.WriteLine("");
@@ -80,6 +84,7 @@ public class Warrior
                     return;
                 default:
                     Console.WriteLine("잘못된 입력입니다");
+                    Thread.Sleep(1000);
                     continue;
             }
         }

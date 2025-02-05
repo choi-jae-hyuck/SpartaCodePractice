@@ -6,6 +6,7 @@ public class Inventory
     {
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("인벤토리");
             Console.WriteLine("보유중인 아이템을 관리할 수 있습니다");
             Console.WriteLine("");
@@ -37,6 +38,7 @@ public class Inventory
                     return;
                 default:
                     Console.WriteLine("잘못된 입력입니다");
+                    Thread.Sleep(1000);
                     break;
             }
         }
@@ -49,6 +51,7 @@ public class Inventory
 
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("인벤토리 - 장착관리");
             Console.WriteLine("보유중인 아이템을 관리할 수 있습니다");
             Console.WriteLine("");
@@ -93,6 +96,7 @@ public class Inventory
             else
             {
                 Console.WriteLine("잘못된 입력입니다");
+                Thread.Sleep(1000);
             }
         }
     }
